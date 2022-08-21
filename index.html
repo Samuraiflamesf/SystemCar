@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="_assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="_assets/css/fonts.css">
+  <link rel="stylesheet" href="_assets/css/style.css">
+  <link rel="shortcut icon" href="_assets/icons/FlameBox.ico">
+
+  <title>System Car</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav navbar navbar-expand">
+      <!--NAVBAR-->
+      <div class="container justify-content-center">
+        <a href="#" id="logo" class="navbar-brand">
+          <img src="_assets/img/logo_FlameBox.png" data-tilt alt="Logo" width="50"
+            class="d-inline-block align-text-center">
+          FlameFinans
+        </a>
+      </div>
+      </div>
+    </nav>
+  </header>
+  <!--Menu -->
+  <section >
+    <div class="container">
+      <div class="row">
+        <!--Menu Text-->
+        <div class="col-md-6 d-flex mb-5">
+          <!--Lado esquerdo-->
+          <div class="bg-menu">
+            <div class="text-center">
+              <br>
+              <h1 class="title" style="text-transform:uppercase;">
+                System Car
+              </h1>
+              <h4 id="veloci m-4">
+                Velocidade do carro:
+                <span id="velocidade">0 KM</span>
+              </h4>
+              <div class="row input_console m-3 p-3">
+                <h3 id="text">Carro está desligado</h3>
+                <h4 id="text1" class="d-none">Carro está desligado</h4>
+              </div>
+              <div class="btns">
+                <div class="row justify-itens-between mt-1 mb-1">
+                  <div class="align-content-center ">
+
+                    <div class="col h2" id="bg_carro">
+                      <a onclick="carro.ligar()">
+                        <img src="/_components/img/btn.png" id="btnOff" class="" width="100">
+                        <img src="/_components/img/btn_houver.png" id="btnOn" class="d-none" width="100">
+                        START
+                      </a>
+                    </div>
+                    <div class="col h2">
+                      <a onmouseup="carro.acelerar()">
+                        <img src="/_components/img/acc.png" id="btnOn" width="100">
+                        SPEED
+                      </a>
+                    </div>
+                    <div class="col h2">
+                      <a onmouseup="carro.break()">
+                        <img src="/_components/img/break.png" id="btnOn" width="100">
+                        BREAK
+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <!--Carro-->
+        <div class="col-md-6">
+          <div class="container
+          ">
+            <img class="img-fluid" id="carOff" src="/_components/img/carOff_bg.png">
+            <img class="img-fluid d-none" id="carOn" src="/_components/img/carOn_bg.png">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Footer-->
+  <footer class="container-fluid w-100 text-center">
+    <p class="h4 p-3" >FlameFinans© 2022 Tecnlogia Ltda.<br> CNPJ xx.xxx.xxx/0000-00 .</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="_assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="_assets/js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="_assets/js/script.js"></script>
+</body>
+
+</html>
